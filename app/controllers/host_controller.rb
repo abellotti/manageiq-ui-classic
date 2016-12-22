@@ -12,6 +12,7 @@ class HostController < ApplicationController
   end
 
   def show
+    Rails.logger.error "XXXXXXXXXXX"
     return if perfmenu_click?
 
     @lastaction = "show"
